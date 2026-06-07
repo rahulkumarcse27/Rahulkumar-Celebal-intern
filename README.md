@@ -2,6 +2,166 @@
 
 #Week1
 
+Machine Learning Foundations Assignment
+
+This repository contains solutions for a comprehensive Machine Learning Foundations assignment covering Python programming, NumPy, Pandas, Linear Algebra, Statistics, and Probability Theory. The notebook demonstrates fundamental concepts required for Data Science and Machine Learning workflows.
+
+📌 Topics Covered
+🐍 Python Fundamentals
+Data Types & Control Flow
+Functions & Lambda Expressions
+Data Structures (Lists, Sets, Dictionaries)
+Exception Handling
+🔢 NumPy
+Array Creation & Reshaping
+Indexing & Slicing
+Vectorized Operations
+Matrix Multiplication & Dot Product
+🐼 Pandas
+DataFrames & Series
+Data Filtering
+GroupBy Operations
+Missing Value Handling
+Data Aggregation
+📐 Linear Algebra
+Vector Representation
+Matrix Operations
+Eigenvalues & Eigenvectors
+Singular Value Decomposition (SVD)
+Dimensionality Reduction Concepts
+📊 Statistics
+Descriptive Statistics
+Hypothesis Testing
+Pearson Correlation
+Error Metrics (MAE, MSE, RMSE, R², Adjusted R²)
+Distribution Testing
+Stationarity Testing (ADF Test)
+Population Stability Index (PSI)
+🎲 Probability Theory
+Basic Probability
+Conditional Probability
+Joint Probability
+Bayes Theorem
+Normal Distribution
+Binomial Distribution
+Poisson Distribution
+Central Limit Theorem (CLT)
+🛠 Technologies Used
+Python 3.x
+NumPy
+Pandas
+Matplotlib
+Seaborn
+SciPy
+Statsmodels
+📂 Project Structure
+Week1_ML_Foundations/
+│
+├── week1_assignment.ipynb
+├── README.md
+└── requirements.txt
+📈 Key Concepts Implemented
+Python
+
+✔ Conditional Statements
+
+✔ Exception Handling
+
+✔ Functions & Lambda Expressions
+
+✔ Dictionary, Set, List Comprehension
+
+NumPy
+
+✔ Array Manipulation
+
+✔ Matrix Operations
+
+✔ Boolean Indexing
+
+✔ Dot Product
+
+Pandas
+
+✔ Data Cleaning
+
+✔ Missing Value Imputation
+
+✔ GroupBy Analysis
+
+✔ Data Filtering
+
+Linear Algebra
+
+✔ Vector Norm
+
+✔ Matrix Multiplication
+
+✔ Eigen Decomposition
+
+✔ Singular Value Decomposition (SVD)
+
+Statistics
+
+✔ Hypothesis Testing
+
+✔ Correlation Analysis
+
+✔ Distribution Testing
+
+✔ Model Evaluation Metrics
+
+Probability
+
+✔ Bayes Theorem
+
+✔ Probability Distributions
+
+✔ Central Limit Theorem
+
+✔ Conditional Probability
+
+📊 Visualizations Included
+Vector Visualization
+Eigenvector Plot
+Salary Distribution Histogram with KDE
+Distribution Shift Visualization
+Normal Distribution Curves
+Binomial PMF
+Poisson PMF
+Central Limit Theorem Demonstration
+🎯 Learning Outcomes
+
+After completing this assignment, learners will be able to:
+
+Write efficient Python code for data analysis.
+Manipulate and analyze datasets using Pandas.
+Perform numerical computations with NumPy.
+Understand core Linear Algebra concepts used in ML.
+Apply statistical methods for inference and hypothesis testing.
+Interpret probability distributions and Bayesian reasoning.
+Evaluate machine learning model performance using standard metrics.
+🚀 How to Run
+Clone the repository
+git clone https://github.com/yourusername/ml-foundations-week1.git
+Install dependencies
+pip install numpy pandas matplotlib seaborn scipy statsmodels
+Open Jupyter Notebook
+jupyter notebook
+Run all cells from top to bottom.
+✅ Assignment Status
+Python Fundamentals ✔
+NumPy ✔
+Pandas ✔
+Linear Algebra ✔
+Statistics ✔
+Probability Theory ✔
+Visualizations ✔
+Assertions Passed ✔
+👨‍💻 Author
+
+Rahul Kumar
+
 #Week 2 
 
 Machine Learning Pipeline Summary¶
