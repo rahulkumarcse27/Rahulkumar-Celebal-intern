@@ -142,8 +142,7 @@ Apply statistical methods for inference and hypothesis testing.
 Interpret probability distributions and Bayesian reasoning.
 Evaluate machine learning model performance using standard metrics.
 🚀 How to Run
-Clone the repository
-git clone https://github.com/yourusername/ml-foundations-week1.git
+
 Install dependencies
 pip install numpy pandas matplotlib seaborn scipy statsmodels
 Open Jupyter Notebook
