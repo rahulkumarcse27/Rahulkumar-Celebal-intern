@@ -7,6 +7,7 @@ Machine Learning Foundations Assignment
 This repository contains solutions for a comprehensive Machine Learning Foundations assignment covering Python programming, NumPy, Pandas, Linear Algebra, Statistics, and Probability Theory. The notebook demonstrates fundamental concepts required for Data Science and Machine Learning workflows.
 
 📌 Topics Covered
+
 🐍 Python Fundamentals
 Data Types & Control Flow
 Functions & Lambda Expressions
@@ -54,6 +55,7 @@ Matplotlib
 Seaborn
 SciPy
 Statsmodels
+
 📂 Project Structure
 Week1_ML_Foundations/
 │
@@ -130,6 +132,7 @@ Normal Distribution Curves
 Binomial PMF
 Poisson PMF
 Central Limit Theorem Demonstration
+
 🎯 Learning Outcomes
 
 After completing this assignment, learners will be able to:
@@ -141,6 +144,7 @@ Understand core Linear Algebra concepts used in ML.
 Apply statistical methods for inference and hypothesis testing.
 Interpret probability distributions and Bayesian reasoning.
 Evaluate machine learning model performance using standard metrics.
+
 🚀 How to Run
 
 Install dependencies
