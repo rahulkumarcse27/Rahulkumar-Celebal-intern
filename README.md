@@ -167,41 +167,166 @@ Rahul Kumar
 
 #Week 2 
 
-Machine Learning Pipeline Summary¶
-This project implemented a complete end-to-end machine learning pipeline using Tesla deliveries and production data.
+README
+🚗 Tesla Deliveries Prediction using Machine Learning
+📌 Project Overview
 
-Pipeline Steps:
-Data Loading
-Loaded the Tesla dataset using pandas.
-Data Understanding
-Explored dataset structure, data types, and checked missing values.
-Exploratory Data Analysis (EDA)
-Performed statistical analysis and visualizations.
-Analyzed relationships between production and deliveries.
-Generated correlation heatmap.
-Data Preprocessing
-Encoded categorical columns using Label Encoding.
-Feature Engineering
-Selected relevant input features and target variable.
-Train-Test Split
-Split dataset into training and testing sets.
-Model Building
-Trained a Random Forest Regression model.
-Prediction
-Generated predictions on unseen test data.
-Model Evaluation
-Evaluated performance using:
-MAE
-RMSE
-R² Score
-Feature Importance Analysis
-Identified Production Units as the most influential feature.
-Model Saving
-Saved the trained model using Joblib for future deployment and prediction.
-Final Result:
-Achieved excellent prediction accuracy with R² Score ≈ 0.989.
-Successfully built a robust regression-based ML pipeline for Tesla delivery prediction.
+This project builds a Machine Learning Regression model to predict Tesla vehicle deliveries using historical production, pricing, battery, charging infrastructure, and regional data from 2015–2025. The workflow covers data preprocessing, exploratory data analysis (EDA), model training, evaluation, feature importance analysis, and model persistence for future deployment.
 
+🎯 Objectives
+Analyze Tesla production and delivery trends.
+Explore relationships between production, pricing, battery capacity, and deliveries.
+Build a predictive model for Tesla estimated deliveries.
+Identify key factors influencing deliveries.
+Save the trained model for deployment and future predictions.
+📊 Dataset Information
+
+The dataset contains Tesla vehicle delivery and production records across multiple regions and models.
+
+Features
+Feature	Description
+Year	Year of record
+Month	Month of record
+Region	Sales region
+Model	Tesla model
+Production_Units	Vehicles produced
+Avg_Price_USD	Average vehicle price
+Battery_Capacity_kWh	Battery capacity
+Range_km	Vehicle range
+CO2_Saved_tons	Environmental impact
+Source_Type	Data source category
+Charging_Stations	Number of charging stations
+Target Variable
+Estimated_Deliveries
+🛠️ Technologies Used
+Python
+Pandas
+NumPy
+Matplotlib
+Seaborn
+Scikit-Learn
+Joblib
+Kaggle Dataset
+📈 Exploratory Data Analysis (EDA)
+Dataset Inspection
+Checked data types and structure.
+Verified missing values.
+Generated descriptive statistics.
+Visualizations
+Production vs Deliveries Scatter Plot
+
+Analyzed the relationship between:
+
+Production Units
+Estimated Deliveries
+Correlation Heatmap
+
+Visualized correlations among numerical features to identify important relationships.
+
+🔄 Data Preprocessing
+Categorical Encoding
+
+Applied Label Encoding to:
+
+Region
+Model
+Source_Type
+Feature Selection
+
+Input Features (X):
+
+Year
+Month
+Region
+Model
+Production_Units
+Avg_Price_USD
+Battery_Capacity_kWh
+Range_km
+CO2_Saved_tons
+Source_Type
+Charging_Stations
+
+Target Variable (y):
+
+Estimated_Deliveries
+🤖 Machine Learning Model
+Algorithm Used
+Random Forest Regressor
+
+Reasons for selecting Random Forest:
+
+Handles non-linear relationships.
+High predictive performance.
+Robust against overfitting.
+Works well with mixed feature types.
+🔀 Train-Test Split
+Training Data: 80%
+Testing Data: 20%
+Random State: 42
+📉 Model Evaluation
+
+The model was evaluated using:
+
+Metric	Value
+MAE	323.46
+RMSE	409.50
+R² Score	0.9888
+Result
+
+The model achieved an R² Score of 98.88%, indicating excellent predictive performance.
+
+⭐ Feature Importance
+
+Top influential features:
+
+Feature	Importance
+Production_Units	0.9908
+CO2_Saved_tons	0.0023
+Range_km	0.0014
+Avg_Price_USD	0.0013
+Charging_Stations	0.0012
+Key Insight
+
+Production Units is by far the most important factor affecting Tesla deliveries.
+
+💾 Model Saving
+
+The trained model was saved using Joblib:
+
+import joblib
+
+joblib.dump(model, "tesla_delivery_model.pkl")
+
+Saved File:
+
+tesla_delivery_model.pkl
+📌 Key Insights
+Tesla deliveries are highly dependent on production volume.
+Strong positive correlation exists between production and deliveries.
+Charging infrastructure and environmental impact contribute moderately.
+Random Forest successfully captured complex relationships within the data.
+The model demonstrates strong generalization on unseen data.
+🚀 Future Improvements
+Hyperparameter tuning using GridSearchCV.
+Compare with XGBoost and LightGBM.
+Deploy using Flask/FastAPI.
+Build an interactive dashboard using Streamlit.
+Incorporate real-world Tesla financial and market data.
+📷 Project Outputs
+Production vs Deliveries Scatter Plot
+Correlation Heatmap
+Feature Importance Visualization
+Trained Regression Model
+Delivery Predictions
+✅ Conclusion
+
+This project successfully developed an end-to-end Machine Learning pipeline for predicting Tesla vehicle deliveries. Using a Random Forest Regressor, the model achieved 98.88% accuracy (R² Score) and identified Production Units as the dominant factor influencing deliveries. The trained model can be further integrated into business intelligence or forecasting applications.
+
+👨‍💻 Author
+
+Rahul Kumar
+Data Science & Machine Learning Enthusiast 🚀
 
 #WEEK 3 
 
