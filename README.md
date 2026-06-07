@@ -3,6 +3,7 @@
 #Week1
 
 #Week 2 
+
 Machine Learning Pipeline Summary¶
 This project implemented a complete end-to-end machine learning pipeline using Tesla deliveries and production data.
 
@@ -40,6 +41,7 @@ Successfully built a robust regression-based ML pipeline for Tesla delivery pred
 
 
 #WEEK 3 
+
 Country Intelligence System using Classification, Ensemble Learning & Clustering
 Overview
 
@@ -182,7 +184,7 @@ Deploy the project using FastAPI or Streamlit.
 Integrate real-time economic datasets.
 Build an interactive dashboard.
 Automate model retraining and monitoring.
-Author
 
+Author
 Rahul Kumar
 Data Science | Machine Learning | Artificial Intelligence
