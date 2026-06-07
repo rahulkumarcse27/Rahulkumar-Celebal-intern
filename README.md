@@ -238,7 +238,9 @@ Matplotlib
 Seaborn
 Scikit-learn
 XGBoost
+
 Project Workflow
+
 Data Collection
       ↓
 Data Preprocessing
@@ -275,20 +277,25 @@ Logistic Regression
 Baseline model used for development status prediction.
 
 Random Forest
+
 Ensemble learning model utilizing multiple decision trees for improved performance.
 
 XGBoost
+
 Gradient boosting algorithm known for high predictive accuracy and efficiency.
 
 Clustering
+
 K-Means Clustering
 
 Grouped countries based on similar socioeconomic characteristics.
 
 DBSCAN
+
 Density-based clustering used for identifying hidden patterns and detecting outliers.
 
 Dimensionality Reduction
+
 Principal Component Analysis (PCA)
 
 Used PCA to:
@@ -325,7 +332,9 @@ Segmented countries into meaningful clusters.
 Identified influential socioeconomic indicators.
 Detected outlier countries using DBSCAN.
 Generated insights to support economic and development analysis.
+
 Project Structure
+
 Country-Intelligence-System/
 │
 ├── data/
@@ -342,12 +351,15 @@ Country-Intelligence-System/
 ├── README.md
 │
 └── requirements.txt
+
 Future Improvements
+
 Deploy the project using FastAPI or Streamlit.
 Integrate real-time economic datasets.
 Build an interactive dashboard.
 Automate model retraining and monitoring.
 
 Author
+
 Rahul Kumar
 Data Science | Machine Learning | Artificial Intelligence
