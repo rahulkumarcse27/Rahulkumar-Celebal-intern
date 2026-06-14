@@ -1,6 +1,6 @@
 # Rahulkumar-Celebal-intern
 
-#Week1
+# WEEK-1
 
 Machine Learning Foundations Assignment
 
@@ -165,7 +165,7 @@ Assertions Passed ✔
 
 Rahul Kumar
 
-#Week 2 
+# WEEK-2
 
 README
 🚗 Tesla Deliveries Prediction using Machine Learning
@@ -328,7 +328,7 @@ This project successfully developed an end-to-end Machine Learning pipeline for 
 Rahul Kumar
 Data Science & Machine Learning Enthusiast 🚀
 
-#WEEK 3 
+# WEEK-3 
 
 Country Intelligence System using Classification, Ensemble Learning & Clustering
 Overview
