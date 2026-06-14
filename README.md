@@ -488,3 +488,152 @@ Author
 
 Rahul Kumar
 Data Science | Machine Learning | Artificial Intelligence
+
+
+# WEEK-4
+
+# 📘 CIFAR-10 Image Classification: ANN vs CNN
+
+## Overview
+
+This project compares **Artificial Neural Networks (ANN)** and **Convolutional Neural Networks (CNN)** on the CIFAR-10 image classification dataset. The goal is to understand how different deep learning architectures process image data and why CNNs are the preferred choice for computer vision tasks.
+
+## Dataset
+
+**CIFAR-10** consists of 60,000 color images (32×32 pixels) across 10 classes:
+
+* Airplane
+
+* Automobile
+
+* Bird
+
+* Cat
+
+* Deer
+
+* Dog
+
+* Frog
+
+* Horse
+
+* Ship
+
+* Truck
+
+* Training Images: 50,000
+
+* Test Images: 10,000
+
+## Project Objectives
+
+* Build and train an ANN model for image classification.
+* Build and train a CNN model for image classification.
+* Compare ANN and CNN performance.
+* Analyze accuracy, loss curves, and generalization.
+* Explore techniques such as Dropout, Batch Normalization, Data Augmentation, and Early Stopping.
+
+## Model Architectures
+
+### ANN
+
+* Fully Connected Dense Layers
+* ReLU Activation
+* Dropout Regularization
+* Softmax Output Layer
+
+### CNN
+
+* Convolutional Layers
+* Max Pooling Layers
+* Batch Normalization
+* Dropout Layers
+* Data Augmentation
+* Early Stopping
+
+## Results
+
+| Model | Train Accuracy | Validation Accuracy | Test Accuracy |
+| ----- | -------------- | ------------------- | ------------- |
+| ANN   | 43.21%         | 45.54%              | 43.53%        |
+| CNN   | 74.26%         | 69.71%              | 72.55%        |
+
+## Key Findings
+
+### ANN
+
+* Learns from flattened pixel values.
+* Ignores spatial relationships between pixels.
+* Achieves moderate classification accuracy.
+* More prone to overfitting on image datasets.
+
+### CNN
+
+* Preserves image structure and spatial information.
+* Automatically extracts features such as edges, textures, and shapes.
+* Learns hierarchical representations of images.
+* Achieves significantly higher accuracy and better generalization.
+
+## Training Improvements
+
+### Dropout
+
+Reduces overfitting by randomly disabling neurons during training.
+
+### Batch Normalization
+
+Stabilizes training and accelerates convergence.
+
+### Data Augmentation
+
+Generates transformed versions of images using:
+
+* Rotation
+* Horizontal Flip
+* Zoom
+* Width/Height Shifts
+
+This increases dataset diversity and improves generalization.
+
+### Early Stopping
+
+Stops training when validation loss stops improving and restores the best model weights.
+
+## Performance Analysis
+
+### Accuracy
+
+CNN achieved substantially higher training, validation, and test accuracy than ANN.
+
+### Loss Curves
+
+CNN showed faster convergence and lower validation loss, indicating more effective feature learning.
+
+### Generalization
+
+CNN generalized better to unseen images because convolution and pooling layers capture meaningful visual patterns.
+
+## Conclusion
+
+This project demonstrates that CNNs significantly outperform ANNs for image classification tasks. While ANNs can learn basic pixel-level patterns, they fail to preserve spatial information present in images. CNNs overcome this limitation through convolution, pooling, and hierarchical feature extraction.
+
+The addition of Batch Normalization, Dropout, Data Augmentation, and Early Stopping further improved model robustness and generalization. These techniques represent industry-standard practices used in modern computer vision systems.
+
+## Future Improvements
+
+* Transfer Learning
+* ResNet
+* EfficientNet
+* Vision Transformers (ViTs)
+* Object Detection (YOLO)
+* Image Segmentation
+
+## Technologies Used
+
+* Python
+* TensorFlow / Keras
+* NumPy
+* Pandas
+* Matplotlib
+* CIFAR-10 Dataset
