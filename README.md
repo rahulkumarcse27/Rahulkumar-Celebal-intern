@@ -639,7 +639,7 @@ The addition of Batch Normalization, Dropout, Data Augmentation, and Early Stopp
 * CIFAR-10 Dataset
 
 
-  ## Week-5
+  # WEEK-5
 
   # 📘 Deep Learning Text Generation Learning Project
 
