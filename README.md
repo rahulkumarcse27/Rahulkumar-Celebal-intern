@@ -637,3 +637,379 @@ The addition of Batch Normalization, Dropout, Data Augmentation, and Early Stopp
 * Pandas
 * Matplotlib
 * CIFAR-10 Dataset
+
+
+  ## Week-5
+
+  # 📘 Deep Learning Text Generation Learning Project
+
+## Text Generation using Vanilla RNN, LSTM, and GRU
+
+This project demonstrates how Deep Learning sequence models learn language patterns, grammar, contextual relationships, and next-word prediction for text generation.
+
+The notebook is designed for students and beginners to understand the differences between **Vanilla RNN**, **LSTM**, and **GRU** architectures through hands-on experiments.
+
+---
+
+## 🎯 Project Objective
+
+Design and implement Deep Learning models capable of learning the structure, grammar, and contextual dependencies of text to generate meaningful sequences.
+
+Models Implemented:
+
+* Vanilla RNN
+* LSTM (Long Short-Term Memory)
+* GRU (Gated Recurrent Unit)
+
+The project compares:
+
+* Training Loss
+* Generated Text Quality
+* Memory Handling
+* Long-Term Dependency Learning
+* Computational Efficiency
+
+---
+
+## 🧠 Learning Outcomes
+
+By completing this project, students will learn:
+
+* Text preprocessing and tokenization
+* Sequence generation for next-word prediction
+* Word embeddings
+* Recurrent Neural Networks
+* LSTM architecture and gating mechanisms
+* GRU architecture and memory optimization
+* Text generation using trained sequence models
+* Comparison of sequence modeling architectures
+
+---
+
+## 📂 Project Workflow
+
+```text
+Text Corpus
+     ↓
+Tokenization
+     ↓
+Sequence Generation
+     ↓
+Padding
+     ↓
+Input Features (X)
+Target Labels (y)
+     ↓
+Embedding Layer
+     ↓
+RNN / LSTM / GRU
+     ↓
+Softmax Output
+     ↓
+Next Word Prediction
+     ↓
+Text Generation
+```
+
+---
+
+## ⚙️ Technologies Used
+
+* Python
+* TensorFlow / Keras
+* NumPy
+* Matplotlib
+
+---
+
+## 📥 Datasets Used
+
+A small built-in corpus is used for quick experimentation.
+
+Students can replace it with:
+
+* Shakespeare Text
+* Song Lyrics
+* Chatbot Conversations
+* Story Paragraphs
+* Custom PDF Extracted Text
+* Research Articles
+* News Articles
+
+---
+
+## 🔤 Text Preprocessing
+
+The project performs:
+
+### Tokenization
+
+Converts words into integer tokens.
+
+Example:
+
+```python
+deep learning is transforming artificial intelligence
+```
+
+↓
+
+```text
+[1, 2, 3, 4, 5]
+```
+
+### Sequence Generation
+
+Creates n-gram sequences:
+
+```text
+deep learning
+deep learning is
+deep learning is transforming
+```
+
+### Padding
+
+Ensures all sequences have equal length before training.
+
+---
+
+## 🧠 Model Architectures
+
+### 1. Vanilla RNN
+
+```python
+Embedding
+↓
+SimpleRNN(128)
+↓
+Dense(Softmax)
+```
+
+#### Advantages
+
+* Simple architecture
+* Fast training
+* Easy to understand
+
+#### Limitations
+
+* Suffers from vanishing gradients
+* Poor long-term memory
+
+---
+
+### 2. LSTM
+
+```python
+Embedding
+↓
+LSTM(128)
+↓
+Dense(Softmax)
+```
+
+#### Features
+
+* Input Gate
+* Forget Gate
+* Output Gate
+
+#### Advantages
+
+* Handles long-term dependencies
+* Better contextual understanding
+* Improved text generation quality
+
+---
+
+### 3. GRU
+
+```python
+Embedding
+↓
+GRU(128)
+↓
+Dense(Softmax)
+```
+
+#### Features
+
+* Update Gate
+* Reset Gate
+
+#### Advantages
+
+* Faster than LSTM
+* Fewer parameters
+* Similar performance to LSTM
+
+---
+
+## 📊 Model Comparison
+
+| Feature                | RNN   | LSTM      | GRU       |
+| ---------------------- | ----- | --------- | --------- |
+| Memory Handling        | Poor  | Excellent | Very Good |
+| Long-Term Dependencies | Weak  | Strong    | Strong    |
+| Training Speed         | Fast  | Slowest   | Faster    |
+| Complexity             | Low   | High      | Medium    |
+| Text Quality           | Basic | Best      | Near LSTM |
+
+---
+
+## 🧪 Experiments Performed
+
+### Experiment 1: AI Corpus
+
+```text
+machine learning is a subset of artificial intelligence
+deep learning uses neural networks with multiple layers
+data quality plays an important role in model performance
+```
+
+Sample Output:
+
+```text
+RNN  : machine learning is a subset of artificial intelligence ...
+LSTM : machine learning is a subset of artificial intelligence ...
+GRU  : machine learning is a subset of artificial intelligence ...
+```
+
+---
+
+### Experiment 2: Shakespeare Corpus
+
+```text
+to be or not to be that is the question
+whether tis nobler in the mind to suffer
+the slings and arrows of outrageous fortune
+```
+
+Sample Output:
+
+```text
+RNN  : to be or not to be that is the question ...
+LSTM : to be or not to be that is the question ...
+GRU  : to be or not to be that is the question ...
+```
+
+---
+
+### Experiment 3: Song Lyrics
+
+```text
+here comes the sun and i say
+its all right little darling
+the smiles returning to the faces
+```
+
+---
+
+### Experiment 4: Chatbot Conversations
+
+```text
+hello how are you
+i am doing well thank you
+what can you help me with
+i can answer questions and provide information
+```
+
+---
+
+### Experiment 5: Story Generation
+
+```text
+once upon a time there was a brave knight
+the knight lived in a beautiful kingdom
+he protected the people from danger
+everyone admired his courage and kindness
+```
+
+---
+
+## 📉 Training Loss Analysis
+
+Training loss curves are plotted for:
+
+* RNN
+* LSTM
+* GRU
+
+The graphs help visualize:
+
+* Convergence speed
+* Learning stability
+* Model performance differences
+
+---
+
+## ✍️ Text Generation
+
+After training, each model predicts the next word repeatedly to generate text.
+
+Example:
+
+```python
+generate_text(model, "machine learning", 10)
+```
+
+Output:
+
+```text
+machine learning is a subset of artificial intelligence ...
+```
+
+---
+
+## 🎓 Student Tasks
+
+### Beginner
+
+* Replace corpus with your own text
+* Increase epochs from 100 → 200
+* Increase embedding dimension
+* Change hidden units from 64 → 128
+* Generate longer text sequences
+
+### Intermediate
+
+* Add Dropout
+* Add Bidirectional LSTM
+* Use larger datasets
+* Experiment with temperature sampling
+
+### Advanced
+
+* Attention Mechanisms
+* Transformer Models
+* GPT-style Text Generation
+* Character-Level Text Generation
+
+---
+
+## 🚀 Future Improvements
+
+* Beam Search Decoding
+* Transformer Architecture
+* GPT Implementation
+* Pretrained Word Embeddings
+* Large Corpus Training
+* PDF Text Extraction Pipeline
+* Interactive Web Interface
+
+---
+
+## 🏆 Conclusion
+
+This project demonstrates the fundamentals of sequence modeling and text generation using Deep Learning.
+
+Key Findings:
+
+* Vanilla RNN learns basic language patterns but struggles with long-term memory.
+* LSTM produces the most coherent and context-aware text.
+* GRU achieves performance close to LSTM while training faster.
+* Dataset quality and size significantly influence generated text quality.
+
+This project serves as an excellent foundation for understanding modern NLP systems, language models, and generative AI architectures.
+
