@@ -1013,3 +1013,261 @@ Key Findings:
 
 This project serves as an excellent foundation for understanding modern NLP systems, language models, and generative AI architectures.
 
+
+# WEEK-6
+
+# 🖼️ Image Denoising Using Autoencoder on MNIST
+
+## 📌 Overview
+
+This project implements a **Convolutional Autoencoder** using **TensorFlow/Keras** to remove noise from handwritten digit images in the MNIST dataset. The model learns to reconstruct clean images from noisy inputs, demonstrating the power of deep learning for image restoration.
+
+---
+
+## 🎯 Aim
+
+To build a deep learning model using an autoencoder on the MNIST dataset for removing noise from images and reconstructing clean images.
+
+---
+
+## ✨ Features
+
+* Load and preprocess the MNIST dataset
+* Normalize grayscale images
+* Add Gaussian noise to images
+* Build a Convolutional Autoencoder
+* Train the model using noisy images as input
+* Reconstruct clean images from noisy inputs
+* Visualize original, noisy, and denoised images
+* Plot training and validation loss
+
+---
+
+## 🛠️ Technologies Used
+
+* Python
+* TensorFlow / Keras
+* NumPy
+* Matplotlib
+
+---
+
+## 📂 Project Structure
+
+```
+Image-Denoising-Autoencoder/
+│
+├── train.py
+├── requirements.txt
+├── README.md
+└── autoencoder.keras
+```
+
+---
+
+## 📊 Dataset
+
+**Dataset:** MNIST
+
+* 60,000 training images
+* 10,000 testing images
+* Image size: 28 × 28 pixels
+* Grayscale handwritten digits (0–9)
+
+---
+
+## ⚙️ Methodology
+
+### Step 1: Import Libraries
+
+Import TensorFlow, NumPy, Matplotlib, and the required Keras modules.
+
+### Step 2: Load MNIST Dataset
+
+Load the handwritten digit dataset using `mnist.load_data()`.
+
+### Step 3: Data Preprocessing
+
+* Normalize pixel values between 0 and 1.
+* Reshape images to `(28, 28, 1)`.
+
+### Step 4: Add Gaussian Noise
+
+Random Gaussian noise is added to create noisy input images while keeping the original images as targets.
+
+### Step 5: Build the Autoencoder
+
+#### Encoder
+
+* Conv2D (32 filters)
+* MaxPooling2D
+* Conv2D (16 filters)
+* MaxPooling2D
+
+#### Decoder
+
+* Conv2D (16 filters)
+* UpSampling2D
+* Conv2D (32 filters)
+* UpSampling2D
+* Conv2D (1 filter, Sigmoid activation)
+
+### Step 6: Compile the Model
+
+* Optimizer: Adam
+* Loss Function: Binary Crossentropy
+
+### Step 7: Train the Model
+
+The model is trained using:
+
+* Input → Noisy Images
+* Target → Original Clean Images
+
+Training Parameters:
+
+* Epochs: 10
+* Batch Size: 128
+
+### Step 8: Image Reconstruction
+
+The trained autoencoder predicts clean images from noisy test images.
+
+### Step 9: Visualization
+
+The following images are displayed:
+
+* Original Images
+* Noisy Images
+* Denoised Images
+
+### Step 10: Performance Evaluation
+
+Training and validation loss are plotted to observe model convergence.
+
+---
+
+## 🧠 Model Architecture
+
+```
+Input Image (28×28×1)
+          │
+          ▼
+Conv2D (32)
+          │
+MaxPooling
+          │
+Conv2D (16)
+          │
+MaxPooling
+          │
+Encoded Representation
+          │
+Conv2D (16)
+          │
+UpSampling
+          │
+Conv2D (32)
+          │
+UpSampling
+          │
+Conv2D (1)
+          │
+          ▼
+Denoised Image
+```
+
+---
+
+## 📈 Results
+
+* Successfully removed Gaussian noise from handwritten digit images.
+* Preserved important digit features during reconstruction.
+* Training and validation loss decreased consistently over epochs, indicating effective learning.
+
+---
+
+## 📷 Output
+
+The project displays:
+
+* Original Image
+* Noisy Image
+* Reconstructed (Denoised) Image
+
+It also generates a graph showing:
+
+* Training Loss
+* Validation Loss
+
+---
+
+## 🚀 How to Run
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/your-username/Image-Denoising-Autoencoder.git
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Run the Project
+
+```bash
+python train.py
+```
+
+---
+
+## 📦 Requirements
+
+```
+tensorflow
+numpy
+matplotlib
+```
+
+---
+
+## 🎓 Learning Outcomes
+
+After completing this project, you will understand:
+
+* Autoencoders
+* Convolutional Neural Networks (CNNs)
+* Image Denoising
+* Image Reconstruction
+* Deep Learning Model Training
+* TensorFlow/Keras Implementation
+* Computer Vision Fundamentals
+
+---
+
+## 🔮 Future Improvements
+
+* Train on color image datasets (CIFAR-10)
+* Use Denoising U-Net architecture
+* Apply the model to medical images
+* Experiment with different noise levels
+* Compare with Variational Autoencoders (VAE)
+* Evaluate using PSNR and SSIM metrics
+
+---
+
+## 📌 Conclusion
+
+A deep learning autoencoder model was successfully developed to remove Gaussian noise from MNIST handwritten digit images. The model learned to reconstruct clean images from noisy inputs while preserving essential digit features. The decreasing training and validation losses demonstrate effective learning, making autoencoders a powerful approach for image denoising and reconstruction tasks.
+
+---
+
+## 👨‍💻 Author
+
+**Rahul Kumar**
+
+B.Tech CSE (AI & ML)
+
