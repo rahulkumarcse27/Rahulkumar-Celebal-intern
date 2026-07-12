@@ -1271,3 +1271,141 @@ A deep learning autoencoder model was successfully developed to remove Gaussian 
 
 B.Tech CSE (AI & ML)
 
+
+# WEEK - 8
+
+# 🤖 Single Agent Smart Assistant
+
+## Project Overview
+
+The **Single Agent Smart Assistant** is a Python-based intelligent assistant that understands user queries, identifies their intent, routes them to the appropriate tool, and returns a structured JSON response.
+
+The project demonstrates the fundamentals of AI agent design, conditional routing, tool integration, logging, and structured output.
+
+---
+
+## Features
+
+* Intent Detection
+* Conditional Routing
+* Calculator Tool
+* Keyword Extraction Tool
+* General Query Handling
+* Structured JSON Response
+* Request Counter
+* Date & Time (Timestamp)
+* Logging (`agent.log`)
+* Error Handling
+
+---
+
+## Project Structure
+
+```
+Single-Agent-Smart-Assistant/
+│
+├── main.py
+├── agent.py
+├── tools.py
+├── agent.log
+├── README.md
+```
+
+---
+
+## Tools
+
+### 1. Calculator Tool
+
+Performs mathematical calculations.
+
+Example:
+
+```
+Calculate 20 + 5
+```
+
+---
+
+### 2. Keyword Extraction Tool
+
+Extracts important keywords from a sentence.
+
+Example:
+
+```
+Extract keywords from Artificial Intelligence is transforming industries
+```
+
+---
+
+### 3. General Response
+
+Handles all other user queries.
+
+Example:
+
+```
+What is Machine Learning?
+```
+
+---
+
+## Technologies Used
+
+* Python 3
+* datetime
+* logging
+* re
+
+---
+
+## Sample JSON Output
+
+```json
+{
+    "request_id": 1,
+    "type": "calculator",
+    "tool": "Calculator",
+    "query": "Calculate 20 + 5",
+    "result": "25",
+    "timestamp": "2026-07-12 15:20:10",
+    "status": "success"
+}
+```
+
+---
+
+## Bonus Features
+
+* Improved Routing
+* Logging
+* Request Counter
+* Timestamp
+* Error Handling
+* Modular Tool Design
+
+---
+
+## Future Enhancements
+
+* Weather Tool
+* Translator Tool
+* Sentiment Analysis Tool
+* Currency Converter
+* Wikipedia Search
+* Voice Assistant
+* GUI using Streamlit or Flask
+
+---
+
+## Author
+
+**Rahul Kumar**
+
+B.Tech CSE (AI & ML)
+
+Single Agent Smart Assistant Project
+
+
+
